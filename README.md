@@ -16,10 +16,10 @@ GoLearn uses a number of open source projects to work properly:
 * [jQuery] - duh
 * [Java] - best applicaton language out there
 * [Spring Boot] - really great assistive application framework
-* [Mongo DB] - an unstructured No-SQL DB
+* [Mongo DB Community Server] - an unstructured No-SQL DB
 
 ### Installation
-There are two microservices i this system -
+There are two microservices in this system -
 * Frontend (Angular 4)
 * Backend (Java + Spring Boot + Mongo)
 
