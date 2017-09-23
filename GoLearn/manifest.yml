@@ -1,0 +1,6 @@
+---
+applications:
+- name: goLearn
+  instances: 1
+  services:
+  - mongodb

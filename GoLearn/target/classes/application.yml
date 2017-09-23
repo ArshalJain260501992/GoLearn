@@ -1,0 +1,11 @@
+#mongodb
+spring:
+  data:
+    mongodb: 
+      host: localhost
+      port: 27017
+      database: goLearn
+#      uri: mongodb://localhost/goLearn
+      #repositories:
+        #enabled: true
+        
