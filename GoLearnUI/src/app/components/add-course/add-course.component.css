@@ -1,0 +1,8 @@
+.input{
+    width: 50vh;
+}
+.modules-view{
+    max-height: 30vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

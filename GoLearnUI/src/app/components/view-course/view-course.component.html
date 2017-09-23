@@ -1,0 +1,50 @@
+{{responseArgs.msg}}
+<div *ngIf="responseArgs.isLoading">
+    <span class="glyphicon glyphicon-refresh spinning"></span> retrieving all courses...
+</div>
+<div class="well container">
+
+  <table class="table table-hover" *ngIf="courses.length > 0; else noCoursesAdded">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Instructor</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Modules</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr *ngFor="let course of courses; let i = index;" class="accordian-toggle">
+        <td>{{course.name}}</td>
+        <td>{{course.instructor}}</td>
+        <td>{{course.price | currency:'USD':true:'1.2-2'}}</td>
+        <td>{{course.description}}</td>
+        <td class="panel-group pull-left">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a style="text-decoration: none" data-toggle="collapse" attr.data-target="{{'#accordion'+i}}">Show Modules</a>              </h4>
+          </div>
+
+          <table id="{{'accordion'+i}}" class="panel-collapse collapse table table-bordered">
+            <thead>
+              <tr>
+                <th >Name</th>
+                <th >Duration</th>
+              </tr>
+              <tr *ngFor="let module of course.modules">
+                <td >{{module.name}}</td>
+                <td >{{module.duration}}</td>
+              </tr>
+            </thead>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-template #noCoursesAdded>
+    No courses added yet..!
+  </ng-template>
+</div>
