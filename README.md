@@ -4,7 +4,9 @@ GoLearn is platform to register a course as an instructor to be available for en
   - Adding courses
   - Viewing all added courses
   - Enroll for a course (Not implementaed yet)
-  
+
+## Demo 
+check it out at https://golearnui.cfapps.io
 ### Tech
 
 GoLearn uses a number of open source projects to work properly:
