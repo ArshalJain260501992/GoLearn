@@ -8,19 +8,19 @@
     <hr/>
     <br/>
     <div class="row">
-      <div class="col-lg-4">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
         <div class="form-group">
           <label class="control-label" for="name">Name</label>
           <input type="text" class="form-control input" id="course.name" name="course.name" [(ngModel)]="course.name">
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
         <div class="form-group">
           <label class="control-label" for="instructorName">Instructor</label>
           <input type="text" class="form-control input" id="instructorName" name="instructorName" [(ngModel)]="course.instructor  ">
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
           <div class="form-group">
             <label class="control-label" for="price">Fee</label>
             <input type="number" class="form-control input" id="course.price" name="course.price" [(ngModel)]="course.price">
@@ -35,22 +35,21 @@
     <div class="modules-view" *ngIf="course.modules.length > 0; else noModulesAdded" #modules id="modules">
       <div *ngFor="let module of course.modules; let i = index;">
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="form-group">
               <label class="control-label" for="module.name">Name</label>
               <input type="text" class="form-control input" id="{{module.name+i}}" name="{{module.name+i}}" [(ngModel)]="module.name">
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="form-group">
               <label class="control-label" for="module.duration">Duration</label>
               <input type="number" class="form-control input" id="{{module.duration+i}}" name="{{module.duration+i}}" [(ngModel)]="module.duration">
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="form-group">
-              <br/>
-              <button class="btn btn-sm btn-danger" (click)="removeModule(module.name)">Delete this Module</button>
+              <button class="btn btn-sm btn-danger" (click)="removeModule(module.name)">Delete Module</button>
             </div>
           </div>
         </div>
