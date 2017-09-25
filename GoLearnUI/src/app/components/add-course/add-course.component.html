@@ -11,19 +11,19 @@
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
         <div class="form-group">
           <label class="control-label" for="name">Name</label>
-          <input type="text" class="form-control input" id="course.name" name="course.name" [(ngModel)]="course.name">
+          <input type="text" class="form-control input" placeholder="Course Name" id="course.name" name="course.name" [(ngModel)]="course.name">
         </div>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
         <div class="form-group">
           <label class="control-label" for="instructorName">Instructor</label>
-          <input type="text" class="form-control input" id="instructorName" name="instructorName" [(ngModel)]="course.instructor  ">
+          <input type="text" class="form-control input" placeholder="Instructor Name" id="instructorName" name="instructorName" [(ngModel)]="course.instructor  ">
         </div>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
           <div class="form-group">
             <label class="control-label" for="price">Fee</label>
-            <input type="number" class="form-control input" id="course.price" name="course.price" [(ngModel)]="course.price">
+            <input type="number" class="form-control input" placeholder="Fee" id="course.price" name="course.price" [(ngModel)]="course.price">
           </div>
         </div>
     </div>
@@ -38,13 +38,13 @@
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="form-group">
               <label class="control-label" for="module.name">Name</label>
-              <input type="text" class="form-control input" id="{{module.name+i}}" name="{{module.name+i}}" [(ngModel)]="module.name">
+              <input type="text" class="form-control input" placeholder="Module Name" id="{{module.name+i}}" name="{{module.name+i}}" [(ngModel)]="module.name">
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
             <div class="form-group">
               <label class="control-label" for="module.duration">Duration</label>
-              <input type="number" class="form-control input" id="{{module.duration+i}}" name="{{module.duration+i}}" [(ngModel)]="module.duration">
+              <input type="number" class="form-control input" placeholder="Duration" id="{{module.duration+i}}" name="{{module.duration+i}}" [(ngModel)]="module.duration">
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -65,7 +65,7 @@
     <div class="row">
       <div class="col-lg-11">
         <label class="control-label" for="description">Description</label>
-        <textarea class="form-control" style="width:100%" rows="5" id="course.description" name="course.description" [(ngModel)]="course.description"></textarea>
+        <textarea class="form-control" placeholder="Description" style="width:100%" rows="5" id="course.description" name="course.description" [(ngModel)]="course.description"></textarea>
       </div>
     </div>
     <br/><br/>
