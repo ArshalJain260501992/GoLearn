@@ -3,7 +3,7 @@
 GoLearn is platform to register a course as an instructor to be available for enrollment. It is a small and very basic interface for 
   - Adding courses
   - Viewing all added courses
-  - Enroll for a course (Not implementaed yet)
+  - Enroll for a course (Not implemented yet)
 
 ## Demo 
 check it out at https://golearnui.cfapps.io
@@ -39,7 +39,7 @@ $ ng serve --port 4200
 
 ### Backend Usage
 * Install Mongo Db Server and start it
-* Run folloeing commands on the cmd-let where you started mongo server
+* Run following commands on the cmd-let where you started mongo server
 ```sh
 $ use dbs goLearn
 $ db.createCollection("course")
